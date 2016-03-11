@@ -67,6 +67,7 @@ sudo apt-get install gem -y
 
 sudo apt-get install firefox
 
+sudo apt-get install gsimplecal
 
 echo "replacing default desktop"
 sudo apt-get remove plank --purge
