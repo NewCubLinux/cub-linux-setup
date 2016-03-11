@@ -40,13 +40,15 @@ sudo apt-get install mysql-server mysql-client -y
 echo "Installing apache2"
 sudo apt-get install apache2 -y
 
+echo "installing file system"
+sudo apt-get install krusader -y
+
+sudo apt-get install firefox -y
+
+sudo apt-get install gsimplecal -y
+
 echo "Initializing git bash prompt"
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt
-
-echo "Updating mlocate database"
-sudo updatedb
-
-
 
 echo "installing node"
 sudo apt-get install nodejs -y
@@ -57,17 +59,14 @@ sudo apt-get install npm -y
 echo "installing grunt"
 sudo npm install -g grunt-cli
 
-echo "installing file system"
-sudo apt-get install krusader
+
 
 echo "installing ruby"
 sudo apt-get install ruby -y
 echo "installing gem"
 sudo apt-get install gem -y
 
-sudo apt-get install firefox
 
-sudo apt-get install gsimplecal
 
 echo "replacing default desktop"
 sudo apt-get remove plank --purge
@@ -98,6 +97,9 @@ cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
 # Bash
 cp $SCRIPTDIR/.custombashrc ~/.custombashrc
 echo "source ~/.custombashrc" > ~/.bashrc
+
+echo "Updating mlocate database"
+sudo updatedb
 
 
 echo "Restarting now..."
