@@ -1,0 +1,17 @@
+# User binaries
+export PATH=$PATH:$HOME/bin
+
+
+# Composer
+export PATH="$PATH:~/.composer/vendor/bin"
+
+
+# Git prompt
+GIT_PROMPT_ONLY_IN_REPO=0
+GIT_PROMPT_THEME=Solarized
+source ~/.bash-git-prompt/gitprompt.sh
+
+
+# Custom aliases
+alias ls="ls -lha"
+alias clear="clear && clear"
