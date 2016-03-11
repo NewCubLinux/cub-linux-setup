@@ -59,6 +59,9 @@ sudo apt-get install npm -y
 echo "installing grunt"
 sudo npm install -g grunt-cli
 
+echo "installing tint2"
+sudo apt-get install tint2 
+
 
 
 echo "installing ruby"
@@ -69,10 +72,9 @@ sudo apt-get install gem -y
 
 
 echo "replacing default desktop"
-sudo apt-get remove plank --purge
-sudo apt-get remove nautilus --purge
-sudo apt-get remove lxpanel --purge
-sudo apt-get install tint2 --purge
+sudo apt-get remove plank --purge -y
+sudo apt-get remove nautilus --purge -y
+sudo apt-get remove lxpanel --purge -y
 sudo apt-get clean
 
 echo "removing useless documents"
