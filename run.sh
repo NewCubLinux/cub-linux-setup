@@ -1,7 +1,11 @@
+SCRIPTFILE=$(readlink -f "$0")
+SCRIPTDIR=$(dirname "$SCRIPTFILE")
+
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-mkdir $HOME/bin
+mkdir ~/bin
 
 echo "installing vim"
 sudo apt-get install vim -y
@@ -77,3 +81,9 @@ rmdir ~/Public
 rmdir ~/Videos
 rm -Rf ~/Templates
 
+cp $SCRIPTDIR/.custombashrc ~/.custombashrc
+echo "source ~/.custombashrc" > ~/.bashrc
+
+
+echo "Restarting..."
+sudo shutdown -r now 
