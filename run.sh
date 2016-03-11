@@ -82,6 +82,9 @@ rmdir ~/Public
 rmdir ~/Videos
 rm -Rf ~/Templates
 
+cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
+sudo cp $SCRIPTDIR/.config/cardapio.desktop /usr/share/applications/cardapio.desktop
+sudo cp $SCRIPTDIR/.config/magnifying-glass-icon.png /usr/share/applications/magnifying-glass-icon.png
 cp $SCRIPTDIR/.custombashrc ~/.custombashrc
 echo "source ~/.custombashrc" > ~/.bashrc
 
