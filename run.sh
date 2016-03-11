@@ -89,7 +89,7 @@ echo "setting up new environment"
 mkdir ~/Pictures/wallpapers
 cp $SCRIPTDIR/.config/wallpaper.png ~/Pictures/wallpapers
 rm -Rf ~/.config/nitrogen
-cp -R $SCRIPTDIR/.config/nitrogen ~/.config/nitrogen
+cp -R $SCRIPTDIR/.config/nitrogen/* ~/.config/nitrogen
 
 # Tint2
 sudo cp $SCRIPTDIR/.config/cardapio.desktop /usr/share/applications/cardapio.desktop
