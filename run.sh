@@ -82,14 +82,23 @@ rmdir ~/Public
 rmdir ~/Videos
 rm -Rf ~/Templates
 
+
+echo "setting up new environment"
+# Nitrogen
 mkdir ~/Pictures/wallpapers
 cp $SCRIPTDIR/.config/wallpaper.png ~/Pictures/wallpapers
-cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
+rm -Rf ~/.config/nitrogen
+cp -R $SCRIPTDIR/.config/nitrogen ~/.config/nitrogen
+
+# Tint2
 sudo cp $SCRIPTDIR/.config/cardapio.desktop /usr/share/applications/cardapio.desktop
 sudo cp $SCRIPTDIR/.config/magnifying-glass-icon.png /usr/share/applications/magnifying-glass-icon.png
+cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
+
+# Bash
 cp $SCRIPTDIR/.custombashrc ~/.custombashrc
 echo "source ~/.custombashrc" > ~/.bashrc
 
 
-echo "Restarting..."
+echo "Restarting now..."
 sudo shutdown -r now 
