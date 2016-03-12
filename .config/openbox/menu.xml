@@ -1,0 +1,167 @@
+    <?xml version="1.0" encoding="UTF-8"?>
+
+    <openbox_menu xmlns="http://openbox.org/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://openbox.org/
+                    file:///usr/share/openbox/menu.xsd">
+
+    <menu id="root-menu" label="Openbox 3">
+
+        <item label="Terminal">
+        <action name="Execute">
+            <command>
+                x-terminal-emulator
+            </command>
+        </action>
+        </item>
+        <item label="Web Browser">
+        <action name="Execute">
+            <command>
+                x-www-browser
+            </command>
+        </action>
+        </item>
+        <item label="File Manager">
+        <action name="Execute">
+            <command>
+                file-manager
+            </command>
+        </action>
+        </item>
+        <item label="Text Editor">
+        <action name="Execute">
+            <command>
+                g-edit
+            </command>
+        </action>
+        </item>
+        <item label="PHPStorm">
+        <action name="Execute">
+            <command>
+                pstorm
+            </command>
+        </action>
+        </item>
+        
+        <separator />
+
+        <item label="Run command">
+            <action name="Execute">
+                <execute>gmrun</execute>
+            </action>
+        </item>
+      	
+        <separator />
+
+    	<menu id="preferences" label="Preferences">
+            <menu id="obConfig" label="Openbox">
+                <item label="Edit menu.xml">
+                    <action name="Execute">
+                        <command>
+                            g-edit ~/.config/openbox/menu.xml
+                        </command>
+                    </action>
+                </item>
+                <item label="Edit rc.xml">
+                    <action name="Execute">
+                        <command>
+                            g-edit ~/.config/openbox/rc.xml
+                        </command>
+                    </action>
+                </item>
+                <item label="Edit autostart">
+                    <action name="Execute">
+                        <command>
+                            g-edit ~/.config/openbox/autostart
+                        </command>
+                    </action>
+                </item>
+              
+                <separator/>
+                <item label="Reconfigure">
+                    <action name="Reconfigure"/>
+                </item>
+                <item label="Restart">
+                    <action name="Restart"/>
+                </item>
+            </menu>
+
+
+
+            <item label="Appearance">
+                <action name="Execute">
+                    <command>
+                        lxappearance
+                    </command>
+                </action>
+            </item>
+            <item label="Choose Wallpaper">
+                <action name="Execute">
+                    <command>
+                        nitrogen
+                    </command>
+                </action>
+            </item>
+            <item label="Notifications">
+                <action name="Execute">
+                    <command>xfce4-notifyd-config</command>
+                </action>
+            </item>
+            <item label="Power Management">
+                <action name="Execute">
+                    <command>
+                        xfce4-power-manager-settings
+                    </command>
+                </action>
+            </item>
+            <menu id="DisplaySettings" label="Display">
+                <item label="ARandR Screen Layout Editor">
+                    <action name="Execute">
+                        <command>
+                            arandr
+                        </command>
+                    </action>
+                </item>
+                <separator label="Help?"/>
+                <item label="man xrandr">
+                    <action name="Execute">
+                        <command>
+                            x-terminal-emulator -T 'man xrandr' -e man xrandr
+                        </command>
+                    </action>
+                </item>
+            </menu>
+            <menu id="gmrunconfig" label="gmrun">
+                <item label="Edit Config File">
+                    <action name="Execute">
+                        <command>
+                            g-edit ~/.gmrunrc
+                        </command>
+                    </action>
+                </item>
+                <separator label="Help?"/>
+                <item label="man page">
+                    <action name="Execute">
+                        <command>
+                            x-terminal-emulator -T 'man gmrun' -e man gmrun
+                        </command>
+                    </action>
+                </item>
+            </menu>
+            <item label="More...">
+                <action name="Execute"><execute>control_panel</execute></action>
+            </item>
+        </menu>
+
+        <separator />
+
+        <item label="Logout">    
+            <action name="Execute"><execute>yad-logout</execute></action>
+        </item>
+        <item label="Shutdown...">
+            <action name="Execute"><execute>yad-shutdown</execute></action>
+        </item>
+
+    </menu>
+
+    </openbox_menu>
