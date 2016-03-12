@@ -6,6 +6,7 @@ sh $SCRIPTDIR/packages.sh
 echo "Setting up alternatives"
 sudo update-alternatives --install /usr/bin/g-edit graphical-text-editor /usr/bin/subl 90
 sudo update-alternatives --set editor /usr/bin/vim.basic
+sudo update-alternatives --install /usr/bin/file-manager file-manager /usr/bin/krusader 90
 
 echo "Preparing composer command"
 curl -sS https://getcomposer.org/installer | php -- --install-dir=$HOME/bin
