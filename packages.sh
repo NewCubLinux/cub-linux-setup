@@ -23,7 +23,7 @@ sudo apt-get install mysql-server mysql-client -y
 
 sudo apt-get install apache2 -y
 
-sudo apt-get install krusader -y
+sudo apt-get install libgnomevfs2-extra gnome-commander -y
 
 sudo apt-get install firefox -y
 
