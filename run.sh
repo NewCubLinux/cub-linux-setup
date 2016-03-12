@@ -90,6 +90,9 @@ mkdir ~/Pictures/wallpapers
 cp $SCRIPTDIR/.config/wallpaper.png ~/Pictures/wallpapers
 rm  ~/.config/nitrogen/*
 cp -R $SCRIPTDIR/.config/nitrogen/* ~/.config/nitrogen
+envsubst < ~/.config/nitrogen/bg-saved.cfg | tee ~/.config/nitrogen/bg-saved.cfg
+envsubst < ~/.config/nitrogen/nitrogen.cfg | tee ~/.config/nitrogen/nitrogen.cfg
+nitrogen --restore
 
 # Tint2
 sudo cp $SCRIPTDIR/.config/cardapio.desktop /usr/share/applications/cardapio.desktop
