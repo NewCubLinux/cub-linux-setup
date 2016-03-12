@@ -15,5 +15,3 @@ source ~/.bash-git-prompt/gitprompt.sh
 # Custom aliases
 alias ls="ls -lha"
 alias clear="clear && clear"
-alias editor="vim"
-alias g-editor="subl"
