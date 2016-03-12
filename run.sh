@@ -20,6 +20,7 @@ echo "replacing default desktop"
 sudo apt-get remove plank --purge -y
 sudo apt-get remove nautilus --purge -y
 sudo apt-get remove lxpanel --purge -y
+# free apt cache
 sudo apt-get clean
 
 echo "removing useless documents"
@@ -47,6 +48,9 @@ cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
 
 # ob autostart
 cp $SCRIPTDIR/.config/ob-autostart/config ~/.config/ob-autostart/config
+
+# openbox
+cp $SCRIPTDIR/.config/openbox/menu.xml ~/.config/openbox/menu.xml
 
 # Bash
 cp $SCRIPTDIR/.custombashrc ~/.custombashrc
