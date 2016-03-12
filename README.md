@@ -1,6 +1,8 @@
 # cub-linux-setup
 My default packages ,dotfiles, etc... for cublinux 1.5 (ubuntu 14.04 LTS)
 
+Inspired by [bunsenlab](https://www.bunsenlabs.org/) (formerly crunchbang)
+
 
 ## Usage
 
