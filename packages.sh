@@ -53,3 +53,6 @@ sudo apt-get install ruby -y
 echo "installing gem"
 sudo apt-get install gem -y
 
+echo "installing arandr"
+sudo apt-get install arandr -y
+
