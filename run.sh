@@ -3,6 +3,10 @@ SCRIPTDIR=$(dirname "$SCRIPTFILE")
 
 sh $SCRIPTDIR/packages.sh
 
+echo "Setting up alternatives"
+sudo update-alternatives --install /usr/bin/g-edit graphical-text-editor /usr/bin/subl 90
+sudo update-alternatives --set editor /usr/bin/vim.basic
+
 echo "Preparing composer command"
 curl -sS https://getcomposer.org/installer | php -- --install-dir=$HOME/bin
 mv $HOME/bin/composer.phar $HOME/bin/composer
