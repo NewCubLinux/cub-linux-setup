@@ -40,3 +40,5 @@ sudo apt-get install arandr -y
 
 sudo apt-get install sublime-text-installer -y
 
+sudo apt-get install curl -y
+
