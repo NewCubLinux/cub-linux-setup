@@ -35,9 +35,8 @@ echo "setting up new environment"
 mkdir ~/Pictures/wallpapers
 cp $SCRIPTDIR/.config/wallpaper.jpg ~/Pictures/wallpapers
 rm  ~/.config/nitrogen/*
-cp -R $SCRIPTDIR/.config/nitrogen/* ~/.config/nitrogen
-envsubst < ~/.config/nitrogen/bg-saved.cfg | tee ~/.config/nitrogen/bg-saved.cfg
-envsubst < ~/.config/nitrogen/nitrogen.cfg | tee ~/.config/nitrogen/nitrogen.cfg
+envsubst < $SCRIPTDIR/.config/nitrogen/bg-saved.cfg | tee ~/.config/nitrogen/bg-saved.cfg
+envsubst < $SCRIPTDIR/.config/nitrogen/nitrogen.cfg | tee ~/.config/nitrogen/nitrogen.cfg
 nitrogen --restore
 
 # Tint2
