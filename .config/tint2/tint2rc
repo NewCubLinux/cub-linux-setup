@@ -64,7 +64,7 @@ panel_margin = 0 -1
 panel_padding = 0 0
 panel_dock = 0
 panel_items = LTSC
-wm_menu = 0
+wm_menu = 1
 panel_layer = bottom
 panel_background_id = 1
 
@@ -149,7 +149,7 @@ launcher_icon_theme = Faenza-Dark-Bunsen
 launcher_item_app = /usr/share/applications/cardapio.desktop
 
 # Mouse
-mouse_middle = none
+mouse_middle = close
 mouse_right = toggle
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
