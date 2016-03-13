@@ -11,13 +11,13 @@
 # ID 1
 rounded = 0
 border_width = 0
-background_color = #000000 40
+background_color = #000000 90
 border_color = #828282 0
 
 # ID 2 - task active
 rounded = 1
 border_width = 0
-background_color = #d8d8d8 30
+background_color = #d8d8d8 15
 border_color = #d8d8d8 30
 
 # ID 3 - task
@@ -64,7 +64,7 @@ panel_margin = 0 -1
 panel_padding = 0 0
 panel_dock = 0
 panel_items = LTSC
-wm_menu = 1
+wm_menu = 0
 panel_layer = bottom
 panel_background_id = 1
 
@@ -80,7 +80,7 @@ taskbar_mode = multi_desktop
 taskbar_padding = 6 0 6
 taskbar_background_id = 5
 taskbar_active_background_id = 6
-taskbar_name = 1
+taskbar_name = 0
 taskbar_name_background_id = 0
 taskbar_name_active_background_id = 0
 taskbar_name_font = Liberation Sans 10
@@ -90,9 +90,9 @@ taskbar_name_active_font_color = #828282 100
 # Tasks
 urgent_nb_of_blink = 20
 task_icon = 1
-task_text = 0
-task_centered = 1
-task_maximum_size = 40 40
+task_text = 1
+task_centered = 0
+task_maximum_size = 150 40
 task_padding = 2 2
 task_background_id = 3
 task_active_background_id = 2
@@ -106,11 +106,9 @@ task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 80 0 0
 
 # Fonts
-task_font = Liberation Sans 06_55 6
-task_font_color = #828282 60
-task_active_font_color = #828282 100
-task_urgent_font_color = #FFFFFF 100
-task_iconified_font_color = #d8d8d8 60
+task_font = Liberation Sans 06_55 9
+task_font_color = #FFFFFF 100
+task_iconified_font_color = #DDDDDD 60
 font_shadow = 0
 
 # System Tray
@@ -145,7 +143,7 @@ launcher_background_id = 9
 launcher_icon_size = 24
 # Specify icon theme names with launcher_icon_theme.
 # if you have an XSETTINGS manager running (like xfsettingsd), tint2 will follow your current theme.
-launcher_icon_theme = chromixium
+launcher_icon_theme = Faenza-Dark-Bunsen
 
 # Each launcher_item_app must be a full path to a .desktop file
 launcher_item_app = /usr/share/applications/cardapio.desktop
@@ -155,7 +153,5 @@ mouse_middle = none
 mouse_right = toggle
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
-
-
 
 # End of config
