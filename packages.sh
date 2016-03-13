@@ -15,14 +15,6 @@ sudo apt-get install guake -y
 
 sudo apt-get install php5 php5-mysql php5-dev -y
 
-# The debconf-set-selections aims to provide a no password prompt install for mysql
-# And the root user will have an empty password
-echo 'mysql-server mysql-server/root_password password ' | sudo debconf-set-selections 
-echo 'mysql-server mysql-server/root_password_again password ' | sudo debconf-set-selections
-sudo apt-get install mysql-server mysql-client -y
-
-sudo apt-get install apache2 -y
-
 sudo apt-get install libgnomevfs2-extra gnome-commander -y
 
 sudo apt-get install firefox -y
