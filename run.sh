@@ -45,6 +45,9 @@ sudo cp $SCRIPTDIR/.config/magnifying-glass-icon.png /usr/share/applications/mag
 mkdir ~/.config/tint2
 cp $SCRIPTDIR/.config/tint2/tint2rc ~/.config/tint2/tint2rc
 
+# gnome-commander
+cp $SCRIPTDIR/.gnome2/gnome-commander ~/.gnome2/gnome-commander
+
 # ob autostart
 cp $SCRIPTDIR/.config/ob-autostart/config ~/.config/ob-autostart/config
 
