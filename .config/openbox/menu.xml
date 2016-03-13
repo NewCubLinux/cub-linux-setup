@@ -7,44 +7,6 @@
 
     <menu id="root-menu" label="Openbox 3">
 
-        <item label="Terminal">
-        <action name="Execute">
-            <command>
-                x-terminal-emulator
-            </command>
-        </action>
-        </item>
-        <item label="Web Browser">
-        <action name="Execute">
-            <command>
-                x-www-browser
-            </command>
-        </action>
-        </item>
-        <item label="File Manager">
-        <action name="Execute">
-            <command>
-                file-manager
-            </command>
-        </action>
-        </item>
-        <item label="Text Editor">
-        <action name="Execute">
-            <command>
-                g-edit
-            </command>
-        </action>
-        </item>
-        <item label="PHPStorm">
-        <action name="Execute">
-            <command>
-                pstorm
-            </command>
-        </action>
-        </item>
-        
-        <separator />
-
         <item label="Run command">
             <action name="Execute">
                 <execute>gmrun</execute>
@@ -154,6 +116,48 @@
         </menu>
 
         <separator />
+
+        <menu id="applications" label="Applications">
+
+            <item label="Terminal">
+            <action name="Execute">
+                <command>
+                    x-terminal-emulator
+                </command>
+            </action>
+            </item>
+            <item label="Web Browser">
+            <action name="Execute">
+                <command>
+                    x-www-browser
+                </command>
+            </action>
+            </item>
+            <item label="File Manager">
+            <action name="Execute">
+                <command>
+                    file-manager
+                </command>
+            </action>
+            </item>
+            <item label="Text Editor">
+            <action name="Execute">
+                <command>
+                    g-edit
+                </command>
+            </action>
+            </item>
+            <item label="PHPStorm">
+            <action name="Execute">
+                <command>
+                    pstorm
+                </command>
+            </action>
+            </item>
+        </menu>
+        
+        <separator />
+
 
         <item label="Logout">    
             <action name="Execute"><execute>yad-logout</execute></action>
