@@ -1,4 +1,6 @@
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
+sudo add-apt-repository ppa:webupd8team/java -y
+
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -32,6 +34,8 @@ sudo apt-get install tint2 -y
 sudo apt-get install ruby -y
 
 sudo apt-get install gem -y
+
+sudo apt-get install oracle-java8-installer -y
 
 sudo apt-get install arandr -y
 
