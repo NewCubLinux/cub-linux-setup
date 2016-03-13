@@ -33,7 +33,7 @@ rm -Rf ~/Templates
 echo "setting up new environment"
 # Nitrogen
 mkdir ~/Pictures/wallpapers
-cp $SCRIPTDIR/.config/wallpaper.png ~/Pictures/wallpapers
+cp $SCRIPTDIR/.config/wallpaper.jpg ~/Pictures/wallpapers
 rm  ~/.config/nitrogen/*
 cp -R $SCRIPTDIR/.config/nitrogen/* ~/.config/nitrogen
 envsubst < ~/.config/nitrogen/bg-saved.cfg | tee ~/.config/nitrogen/bg-saved.cfg
