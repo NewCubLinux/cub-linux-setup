@@ -14,7 +14,7 @@ sudo apt-get install locate -y
 
 sudo apt-get install guake -y
 
-sudo apt-get install php5 php5-mysql php5-dev -y
+sudo apt-get install php5 php5-dev php5-mysql php5-curl -y
 
 sudo apt-get install libgnomevfs2-extra gnome-commander -y
 
