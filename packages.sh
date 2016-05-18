@@ -32,7 +32,7 @@ sudo apt-get install tint2 -y
 
 sudo apt-get install ruby gem -y
 
-sudo apt-get install python ython-pip -y
+sudo apt-get install python python-pip -y
 
 # auto accept java license before installing java
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
