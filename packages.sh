@@ -1,5 +1,5 @@
 sudo add-apt-repository ppa:webupd8team/sublime-text-3 -y
-
+sudo add-apt-repository ppa:webupd8team/java -y
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -34,7 +34,9 @@ sudo apt-get install ruby gem -y
 
 sudo apt-get install python ython-pip -y
 
-sudo apt-get install default-jre -y
+# auto accept java license before installing java
+echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+sudo apt-get install oracle-java8-installer -y
 
 sudo apt-get install arandr -y
 
