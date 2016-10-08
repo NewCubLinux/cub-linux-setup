@@ -56,6 +56,7 @@ cp $SCRIPTDIR/.config/openbox/menu.xml ~/.config/openbox/menu.xml
 
 # Bash
 cp $SCRIPTDIR/.custombashrc ~/.custombashrc
+cp $SCRIPTDIR/.inputrc ~/.inputrc
 echo "source ~/.custombashrc" >> ~/.bashrc
 
 echo "Updating mlocate database"
