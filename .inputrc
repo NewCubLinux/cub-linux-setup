@@ -3,10 +3,16 @@
 "\e[6~": history-search-forward
 
 
-# mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+# mappings for ctrl + left-arrow and ctrl + right-arrow for word moving
 "\e[1;5C": forward-word
 "\e[1;5D": backward-word
 "\e[5C": forward-word
 "\e[5D": backward-word
 "\e\e[C": forward-word
 "\e\e[D": backward-word
+
+# ctrl + backspace
+"\C-h": backward-kill-word
+
+# ctrl + del
+"\e[3;5~": kill-word
